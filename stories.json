@@ -1,29 +1,6 @@
 [
-  {
-    "id":"378", "date":"2026-11-01", "featured":true,
-    "category":"Complexity", "status":"Kernel-checked", "readingPoints":3,
-    "eyebrow":"FEATURED · OPENAI MATH 378", 
-    "title":"A verified negation of PositiveRateETH",
-    "summary":"Lean 4.34.1 derives ¬ PositiveRateETH from OpenAI’s bounded-width SAT theorem, using a verified input converter and polynomial-overhead machine simulation.",
-    "href":"/378/", "source":"https://github.com/thinkthoughts/math/tree/eth-bridge/component-B",
-    "sourceLabel":"Lean source", "tags":["ETH","SAT","RPI","OpenAI"]
-  },
-  {
-    "id":"dam", "date":"2026-10-30", "featured":false,
-    "category":"AI & Memory", "status":"Verified milestones", "readingPoints":0,
-    "eyebrow":"DENSE ASSOCIATIVE MEMORY",
-    "title":"Mean-zero cross-talk and the one-flip signal",
-    "summary":"Lean formalization of conditional mean-zero cross-talk and expected one-flip signal identities, with milestone-specific verification.",
-    "href":"https://github.com/thinkthoughts/lean-dense-associative-memory", "source":"https://github.com/thinkthoughts/lean-dense-associative-memory",
-    "sourceLabel":"Lean repository", "tags":["DAM","Memory","CP6c"]
-  },
-  {
-    "id":"translatepi", "date":"2026-10-28", "featured":false,
-    "category":"Number theory", "status":"Kernel-checked", "readingPoints":0,
-    "eyebrow":"TRANSLATEπ · GENERAL DIVISOR THEOREM",
-    "title":"Residues, periods, and the General Divisor Theorem",
-    "summary":"A Lean-checked arithmetic development on admissible residue classes, minimal periods, totient counts and density.",
-    "href":"https://translatepi.ai/", "source":"https://github.com/thinkthoughts/general-divisor-theorem",
-    "sourceLabel":"GDT Lean source", "tags":["GDT","Totient","Residues"]
-  }
+  {"id":"378","date":"2026-11-01","featured":true,"category":"Complexity","status":"Kernel-checked","readingPoints":3,"eyebrow":"FEATURED · OPENAI MATH 378","title":"A verified negation of PositiveRateETH","summary":"Lean 4.34.1 derives ¬ PositiveRateETH from OpenAI’s bounded-width SAT theorem, using a verified input converter and polynomial-overhead machine simulation.","href":"/378/","source":"https://github.com/thinkthoughts/math/tree/eth-bridge/component-B","sourceLabel":"Lean source","tags":["ETH","SAT","RPI","OpenAI"]},
+  {"id":"automlr","date":"2026-11-02","featured":false,"category":"AI & Architecture","status":"Verified extensions","readingPoints":14,"eyebrow":"ATTENTION-HEAD EXPRESSIVITY · ARXIV 2610.25341","title":"How many attention heads does a Boolean function need?","summary":"A reproducible Lean fork extends the one-layer attention model: maximal symmetric head complexity characterizes parity and its complement. R-001 completes the threshold-degree correspondence in a separately checked patch.","href":"/automlr/","source":"https://github.com/thinkthoughts/automlr","sourceLabel":"Lean fork","tags":["Attention","Transformer","Expressivity","Threshold degree","RPI","Lean"]},
+  {"id":"dam","date":"2026-10-30","featured":false,"category":"AI & Memory","status":"Verified milestones","readingPoints":0,"eyebrow":"DENSE ASSOCIATIVE MEMORY","title":"Mean-zero cross-talk and the one-flip signal","summary":"Lean formalization of conditional mean-zero cross-talk and expected one-flip signal identities, with milestone-specific verification.","href":"https://github.com/thinkthoughts/lean-dense-associative-memory","source":"https://github.com/thinkthoughts/lean-dense-associative-memory","sourceLabel":"Lean repository","tags":["DAM","Memory","CP6c"]},
+  {"id":"translatepi","date":"2026-10-28","featured":false,"category":"Number theory","status":"Kernel-checked","readingPoints":0,"eyebrow":"TRANSLATEπ · GENERAL DIVISOR THEOREM","title":"Residues, periods, and the General Divisor Theorem","summary":"A Lean-checked arithmetic development on admissible residue classes, minimal periods, totient counts and density.","href":"https://translatepi.ai/","source":"https://github.com/thinkthoughts/general-divisor-theorem","sourceLabel":"GDT Lean source","tags":["GDT","Totient","Residues"]}
 ]
