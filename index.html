@@ -18,9 +18,44 @@
   <p class="edition">November 3, 2026 · <a href="https://readingpoint.app">reading point</a></p>
   <h1 class="lead" style="color: gold; font-weight: 500;">Proofs worth checking.</h1>
   <p class="intro">Lean formalizations, verified correspondences, and open reading points. Every story connects its mathematical statement to the code and evidence behind it.</p>
-  <section aria-labelledby="featured-title"><div class="section-header"><h2 id="featured-title">Featured verification</h2><span class="pill">Latest result</span></div>
-   <article class="hero"><span class="eyebrow">OpenAI Math 378 · Complexity theory</span><h2>A verified negation of PositiveRateETH</h2><p class="summary">Lean 4.34.1 derives <code>¬ PositiveRateETH</code> from OpenAI’s bounded-width SAT theorem (at width 3), through an exact encoding converter and polynomial-overhead machine simulation.</p><div class="meta"><span>● Kernel-checked</span><span>11,600 build jobs · exit 0</span><span>3 reading points</span><time datetime="2026-11-01">Nov 1, 2026</time></div><div class="hero-actions"><a class="primary" href="/378/">Read the story <span aria-hidden="true">→</span></a><a class="outline" href="https://github.com/thinkthoughts/math/tree/eth-bridge/component-B">Inspect Lean source</a><a class="outline" href="../378.pdf">Read the paper <span aria-hidden="true">→</span></a></div></article>
-  </section>
+  <section aria-labelledby="featured-title">
+  <div class="section-header">
+    <h2 id="featured-title">Featured verification</h2>
+    <span class="pill">Latest result</span>
+  </div>
+  <article class="hero">
+    <span class="eyebrow">OpenAI Math 378 × Anthropic · Complexity theory</span>
+    <h2>A verified negation of PositiveRateETH</h2>
+    <p class="summary">
+      Lean 4.34.1 derives <code>¬ PositiveRateETH</code> from OpenAI’s
+      bounded-width SAT theorem. A new, independently verified bridge
+      proves that this negation implies Anthropic’s
+      <code>MainResults.ETHIsFalse</code>, connecting two formalizations
+      through kernel-checked machine simulation, encoding conversion,
+      and exponential-rate preservation.
+    </p>
+    <div class="meta">
+      <span>● Kernel-checked</span>
+      <span>Two verified bridges</span>
+      <span>RPI-ETH-010</span>
+      <time datetime="2026-11-03">Nov 3, 2026</time>
+    </div>
+    <div class="hero-actions">
+      <a class="primary" href="/378/">
+        Read the story <span aria-hidden="true">→</span>
+      </a>
+      <a class="outline" href="https://github.com/thinkthoughts/math/tree/eth-bridge/rpi-378.3a">
+        Inspect Lean source
+      </a>
+      <a class="outline" href="https://github.com/thinkthoughts/rpi-index">
+        RPI Index
+      </a>
+      <a class="outline" href="/378.pdf">
+        Read the paper <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </article>
+</section>
   <div class="dashboard">
    <section id="latest" aria-labelledby="latest-heading"><div class="section-header"><h2 id="latest-heading">Our formalization work</h2><span id="count" class="results" aria-live="polite"></span></div><div class="filters"><input id="search" type="search" placeholder="Search projects, theorems, topics…" aria-label="Search stories"><select id="category" aria-label="Filter by topic"><option value="all">All topics</option></select><select id="status" aria-label="Filter by status"><option value="all">All statuses</option></select></div><div id="stories" class="story-list" aria-live="polite"></div></section>
    <aside class="side" aria-label="Reading and verification tools">
