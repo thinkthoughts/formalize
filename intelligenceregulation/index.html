@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An RLT audit of IntelligenceRegulation: the human claim, the formal proof, and the evidence for real-world implementation.">
+  <title>IntelligenceRegulation — RLT Audit | formalize.now</title>
+  <style>
+    :root {color-scheme:light dark;--bg:#f9fafb;--ink:#17212d;--muted:#536273;--line:#d8e0e8;--panel:#fff;--link:#1459ad;--accent:#0c766d}
+    @media(prefers-color-scheme:dark){:root{--bg:#101722;--ink:#e8eef5;--muted:#a9b7c8;--line:#354151;--panel:#182330;--link:#9ac5ff;--accent:#5dd9bd}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}main,header,footer{width:min(850px,calc(100% - 36px));margin:auto}header{padding:25px 0;border-bottom:1px solid var(--line)}nav{display:flex;flex-wrap:wrap;gap:17px;font-size:.9rem}a{color:var(--link);text-underline-offset:3px}main{padding:46px 0 65px}h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.14;letter-spacing:-.035em;margin:.25em 0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-size:.82rem;font-weight:700}h2{font-size:1.4rem;margin:2.3em 0 .6em}h3{font-size:1.06rem;margin-bottom:.2em}p{margin:.65em 0 1em}.lead{font-size:1.2rem;color:var(--muted)}blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:28px 0;font-size:1.15rem}blockquote p{margin:.4em 0}small,.muted{color:var(--muted)}.metrics,.layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}.metric,.layer{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.metric strong{display:block;font-size:1.8rem;line-height:1.25}.metric span{font-size:.88rem;color:var(--muted)}.layer h3{margin:.1em 0 .4em}.layer p{font-size:.93rem;margin:0}.notice{border-left:3px solid var(--line);padding:12px 18px;background:var(--panel);margin:23px 0}.sectionlink{font-size:.93rem}footer{border-top:1px solid var(--line);padding:24px 0 38px;font-size:.87rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header><nav aria-label="Site navigation"><a href="/">formalize.now</a><a href="/rlt/">RLT</a><a href="/rlt-audits/">RLT Audits</a><a href="https://github.com/thinkthoughts/IntelligenceRegulation/tree/formalize-now/intelligenceregulation-review/evidence">Evidence repository</a></nav></header>
+<main>
+  <div class="eyebrow">RLT Audits · Case 001</div>
+  <h1>IntelligenceRegulation</h1>
+  <p class="lead">A reading-level audit of intelligence, a feared future, formal verification, and claims about real systems.</p>
+  <h2>The human question comes first</h2>
+  <blockquote><p>“How can we develop intelligence at a manageable rate worldwide.”</p></blockquote>
+  <p>Victor Rielly's <a href="https://github.com/VictorRielly/IntelligenceRegulation">repository description</a> frames the work around a fear: “if I don't do it they will and there will be no more me.” Those words document a human concern. They do not establish that the future is zero, that any person disappears, or that a speculative outcome has already occurred.</p>
+  <p><strong>RLT asks:</strong> What exactly is written? What conventions give the statement meaning? Which relationships have been proved? What physical evidence supports claims about running systems?</p>
+  <h2>What the project implements</h2>
+  <p>IntelligenceRegulation develops <strong>Hashline</strong>, a research prototype for zero-knowledge proofs of AI inference. Its P1 design aims to keep prompts, outputs, and intermediate activations private while using public model weights. This is a specific cryptographic goal, separate from measuring how intelligence develops globally.</p>
+  <p class="sectionlink"><a href="https://github.com/VictorRielly/IntelligenceRegulation">Original project and documentation</a></p>
+  <h2>What the independent audit established</h2>
+  <div class="metrics" aria-label="Verification results">
+    <div class="metric"><strong>496 / 496</strong><span>Listed Lean modules accepted in separate built-in checker runs</span></div>
+    <div class="metric"><strong>4 / 4</strong><span>Top-level theorem exports accepted by nanoda's independent Rust kernel</span></div>
+    <div class="metric"><strong>4 / 4</strong><span>Axiom-removal controls rejected the missing Classical.choice axiom</span></div>
+  </div>
+  <p>The audit also reproduced L9 and L10 Rust-generated fixtures, reconciled Lean-generated hypotheses with source classifications, and recorded resource-dependent verification retries. All four nanoda checks required a larger 256 MiB worker stack. The checked proof terms remain <strong>conditional on their stated premises</strong>.</p>
+  <div class="notice"><strong>Boundary of the result.</strong> Neither proof checking nor a successful test establishes an unconditional guarantee about a deployed AI system. The audit identifies 31 open normalized keys across its primary premise inventory; parallel theorems use differing assumptions and counting conventions. Implementation correspondence, privacy conditions, and concrete instance data require further evidence.</div>
+  <p class="sectionlink"><a href="https://github.com/thinkthoughts/IntelligenceRegulation/blob/formalize-now/intelligenceregulation-review/evidence/reports/RPI-RLT-VR-007.md">Read the final VR-007 verification report</a> · <a href="https://github.com/thinkthoughts/IntelligenceRegulation/blob/formalize-now/intelligenceregulation-review/evidence/SUMMARY-FOR-VICTOR.md">Read the short research summary</a></p>
+  <h2>The four RLT layers</h2>
+  <div class="layers">
+    <div class="layer"><h3>1. Convention</h3><p>Define what “intelligence,” “manageable,” “private,” and “verified” mean in each local claim.</p></div>
+    <div class="layer"><h3>2. Written expression</h3><p>Preserve the author's wording, exact Lean declarations, repository commits, and stated assumptions.</p></div>
+    <div class="layer"><h3>3. Proved relationship</h3><p>State precisely which formal conclusions follow from which premises, with kernel checks and theorem links.</p></div>
+    <div class="layer"><h3>4. Physical record</h3><p>Keep actual execution logs, hashes, measured behavior, and evidence about the implemented system distinct from proofs.</p></div>
+  </div>
+  <h2>From origin stories to observed reality</h2>
+  <p>The phrase “there will be no more me” can motivate research. It is not an empirical measurement. Human beings are alive now, speaking, reading, writing, and exhaling CO₂. These are observable local conditions, not deductions from an imagined zero future.</p>
+  <p>For <strong>clean datacenters</strong>, the corresponding nonfiction question is concrete: What computation ran, under which human authorization, and what energy, emissions, and water impacts were actually measured? Cryptographic proofs can address specified computational relationships. Scientific measurement must address the physical operations. RLT keeps those statements and their evidence connected without confusing them.</p>
+  <h2>Next research target</h2>
+  <p>Construct one auditable AI-inference reading point connecting a written safety or sustainability claim to its exact formal premises, the implemented computation, and local physical measurements. Use the existing review evidence as a starting point; do not label undeveloped protocol guarantees as completed proofs.</p>
+  <p class="muted">Independent RLT audit of Victor Rielly's research. Source and verification work are attributed separately. This page is a technical reading, not a claim of collaboration or deployed production security.</p>
+</main>
+<footer>formalize.now · <a href="/rlt-audits/">RLT Audits</a> · <a href="/rlt/">Reading Level Test</a></footer>
+</body>
+</html>
