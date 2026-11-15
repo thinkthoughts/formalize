@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="formalize.now style guide: editorial conventions, RLT vocabulary, evidence standards, navigation, and CSS design system.">
+  <title>Style &amp; vocabulary — formalize.now</title>
+  <style>
+    :root{--bg:#0c141c;--panel:#111e29;--panel2:#172837;--line:#2b3e4d;--text:#eef4fb;--muted:#acc0d0;--cyan:#72dfde;--blue:#a8ceff;--amber:#f0c78e;--green:#9be8b5;--shadow:0 18px 55px #0004}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 72% -16%,#193448 0%,transparent 48%),var(--bg);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text)}
+    a{color:var(--blue);text-underline-offset:3px}a:hover{color:var(--cyan)}a:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}.shell{max-width:1130px;margin:auto;padding:0 25px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:#fff;color:#111;padding:10px;z-index:2}.site-header{border-bottom:1px solid var(--line);background:#0c151ddc}.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:24px}.brand{font-size:1.58rem;font-weight:730;letter-spacing:-.035em;white-space:nowrap;text-decoration:none;color:var(--text)}.brand span{color:var(--cyan)}.navlinks{display:flex;flex-wrap:wrap;gap:25px;font-size:.94rem}.navlinks a{color:var(--muted);text-decoration:none}.navlinks a:hover,.navlinks a[aria-current=page]{color:var(--text)}main{padding:45px 0 85px}.kicker,.eyebrow{color:var(--cyan);letter-spacing:.13em;text-transform:uppercase;font-size:.74rem;font-weight:750}h1{font-weight:500;font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.12;letter-spacing:-.045em;margin:12px 0 16px}h2{font-size:clamp(1.45rem,2.4vw,1.9rem);letter-spacing:-.02em;margin:0 0 12px}h3{font-size:1.12rem;margin:23px 0 8px}p{margin:0 0 14px}.intro{max-width:800px;color:var(--muted);font-size:1.04rem}.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:35px;margin-top:45px}.toc{position:sticky;top:18px;align-self:start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.toc strong{display:block;margin-bottom:12px}.toc a{display:block;color:var(--muted);text-decoration:none;padding:6px 0;font-size:.91rem}.toc a:hover{color:var(--cyan)}.section{border-top:1px solid var(--line);padding:31px 0 27px;scroll-margin-top:20px}.section:first-child{border-top:0;padding-top:0}.section>p{max-width:780px;color:var(--muted)}.rule{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:19px 21px;margin:15px 0}.rule p:last-child{margin-bottom:0}.example{border-left:3px solid var(--cyan);padding:10px 17px;background:var(--panel2);border-radius:0 10px 10px 0;margin:12px 0}.example strong{color:var(--green)}.counterexample{border-left-color:var(--amber)}.counterexample strong{color:var(--amber)}.two{display:grid;grid-template-columns:1fr 1fr;gap:15px}.swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.swatch{border:1px solid var(--line);background:var(--panel);border-radius:10px;overflow:hidden}.swatch-color{height:49px}.swatch small{display:block;padding:10px;font-size:.77rem;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:11px 12px}th{color:var(--text);background:var(--panel2)}td{color:#c9d8e4}code{color:#c6eaff;background:#203140;padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}pre{background:#0a1119;border:1px solid var(--line);border-radius:10px;padding:16px;overflow:auto;font-size:.86rem}pre code{padding:0;background:none}.small{font-size:.86rem;color:var(--muted)}.tag{display:inline-block;color:var(--cyan);border:1px solid #43636a;border-radius:30px;padding:2px 9px;font-size:.78rem}footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:25px 0 40px}footer .shell{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}@media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:static;display:flex;gap:8px 17px;flex-wrap:wrap}.toc strong{width:100%;margin:0}.toc a{padding:0}.swatches{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.shell{padding:0 17px}.nav{flex-direction:column;align-items:flex-start;gap:8px;padding:16px 0}.two{grid-template-columns:1fr}.swatches{grid-template-columns:1fr 1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="shell nav"><a class="brand" href="/">formalize<span>.now</span></a><nav class="navlinks" aria-label="Main navigation"><a href="/rlt/">RLT</a><a href="/rlt-audits/">Audits</a><a href="/#research">Research</a></nav></div></header>
+<main id="main" class="shell">
+  <span class="kicker">Editorial &amp; design reference</span>
+  <h1>Style &amp; vocabulary</h1>
+  <p class="intro">A living guide for formalize.now: precise writing, readable mathematics, restrained design, and accountable links between human claims, formal statements, and physical evidence. This is a proposed editorial standard, not a new theorem or a replacement for the RLT specification.</p>
+  <div class="layout">
+    <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#purpose">Purpose</a><a href="#words">Vocabulary</a><a href="#where">Where / when</a><a href="#evidence">Claim &amp; evidence</a><a href="#sites">Site roles</a><a href="#information">Information architecture</a><a href="#design">CSS &amp; layout</a><a href="#templates">Writing patterns</a><a href="#workflow">Revision rules</a></nav>
+    <div>
+      <section id="purpose" class="section">
+        <h2>1. Purpose and reader</h2>
+        <p>formalize.now is the <strong>technical RLT landing page</strong> for researchers, theorem-prover developers, software engineers, and careful readers of technical claims. Begin with a comprehensible statement of the problem; provide formal details and evidence through direct links.</p>
+        <div class="rule"><strong>Editorial objective</strong><p>Preserve the writing. Specify its meaning. Check the stated relationship. Identify the evidence, scope, and unresolved conditions.</p></div>
+        <p>Do not frame the site as a chronological news publication, awards catalog, generic AI showcase, or a collection of outreach attempts. A completed project belongs here because of what can be read, checked, or tested.</p>
+      </section>
+      <section id="words" class="section">
+        <h2>2. Preferred vocabulary</h2>
+        <div class="table-wrap"><table><thead><tr><th>Term</th><th>Use it for</th><th>Careful distinction</th></tr></thead><tbody>
+          <tr><td><strong>Reading point</strong></td><td>A locally identified written claim, expression, convention, or reference with traceable interpretation.</td><td>Not automatically a physical observation or a theorem.</td></tr>
+          <tr><td><strong>RLT (Reading Level Test)</strong></td><td>The independent first-order proof system and its reading-point/specification work.</td><td>Do not describe it as simply a Lean plugin or as proving all empirical claims.</td></tr>
+          <tr><td><strong>Lean 4</strong></td><td>A proof assistant whose kernel checks proof terms against formal statements in dependent type theory.</td><td>A successful proof check does not independently validate the informal specification.</td></tr>
+          <tr><td><strong>Convention</strong></td><td>A declared rule for reading notation or written expressions, with a source and scope.</td><td>Not a measurement or universal physical law.</td></tr>
+          <tr><td><strong>Formal relationship</strong></td><td>A stated derivation or correspondence within a specified logic, including dependencies.</td><td>Say which definitions and assumptions it uses.</td></tr>
+          <tr><td><strong>Nonfiction</strong></td><td>Writing intended to make factual claims accountable to available evidence.</td><td>Label untested interpretations and speculative claims; do not equate publication with verification.</td></tr>
+          <tr><td><strong>Physical record / measurement</strong></td><td>Observed, instrumented, or recorded evidence with methods, units, place, and uncertainty where relevant.</td><td>Logs can document a computational run; they are not automatically environmental measurements.</td></tr>
+          <tr><td><strong>Audit</strong></td><td>A bounded examination of statements, proof dependencies, evidence, and omissions.</td><td>State exactly what was checked and what remains open.</td></tr>
+          <tr><td><strong>Correspondence</strong></td><td>A documented link between expressions, formal statements, implementations, or observed records.</td><td>Do not claim the link is proved unless it has a checkable proof.</td></tr>
+          <tr><td><strong>Conditional</strong></td><td>A result depending on named hypotheses.</td><td>Do not paraphrase as unconditional production readiness.</td></tr>
+          <tr><td><strong>Origin story</strong></td><td>A proposed explanation of how something began.</td><td>Distinguish claims about origins from present material composition and observation.</td></tr>
+          <tr><td><strong>Clean datacenter</strong></td><td>A physical system assessed using explicit energy, emissions, water, and operational boundaries.</td><td>Never infer environmental performance from software proofs alone.</td></tr>
+        </tbody></table></div>
+        <p class="small">Further RLT definitions belong in its own specification; this page governs how the website uses them.</p>
+      </section>
+      <section id="where" class="section">
+        <h2>3. Write “where” for conditions and locations; “when” for time</h2>
+        <p>Prefer <strong>where</strong> when naming the setting, domain, or local conditions under which a statement holds. Use <strong>when</strong> only when timing or a temporal condition is genuinely intended. This is a precision rule, not a blanket grammatical ban.</p>
+        <div class="two">
+          <div class="example counterexample"><strong>Reconsider</strong><p>“When a claim about a physical system has evidence beyond a proof.”</p><p class="small">This suggests a temporal event when the intended question is about the evidentiary conditions of a claim.</p></div>
+          <div class="example"><strong>Prefer</strong><p>“Where a claim concerns a physical system, what evidence supports its correspondence to observation?”</p><p class="small">This names the claim's domain and asks for the relevant evidence.</p></div>
+        </div>
+        <div class="example"><strong>Use “when” for actual time</strong><p>“Record when the experiment ran and which instrument was used.”</p></div>
+        <p>Other useful distinctions: <strong>where</strong> a theorem applies; <strong>under which assumptions</strong> its conclusion follows; <strong>at what time</strong> a sample was measured. Choose the most precise expression rather than force one word into every sentence.</p>
+      </section>
+      <section id="evidence" class="section">
+        <h2>4. Claims, proof, and evidence</h2>
+        <p>Keep RLT's four layers explicit in substantial audits: <strong>convention → written expression → proved relationship → physical record</strong>. Link them without conflating them. If a layer has not been established, say so.</p>
+        <div class="rule"><strong>Allowed claim statuses</strong><p><span class="tag">Kernel-checked</span> For exactly identified formal declarations and permitted axioms. <span class="tag">Tested</span> For an executed software check with a recorded outcome. <span class="tag">Measured</span> For a physical observation with stated method and units. <span class="tag">Proposed</span> For work not yet established. <span class="tag">Open</span> For an unresolved obligation.</p></div>
+        <p>Never turn “the proof checks under assumptions” into “the deployed AI system is safe.” Never treat a measured molecule's physical properties as evidence for an unsupported origin story. Avoid presenting either a zero-origin narrative or its rejection as a substitute for local specifications.</p>
+        <div class="example"><strong>Example — IntelligenceRegulation</strong><p>“The listed Lean modules passed individual checker replay, and four top-level theorem exports passed nanoda with permitted axioms. Production-security conditions remain to be established.”</p></div>
+        <div class="example"><strong>Example — carbon dioxide</strong><p>“A measurement reports CO₂ under a specified sampling method, location, and time. A structural chemical description records one carbon atom bonded to two oxygen atoms per CO₂ molecule.”</p><p class="small">The statement about composition is different in kind from claims about the origin or destiny of matter.</p></div>
+      </section>
+      <section id="sites" class="section">
+        <h2>5. Roles of the three sites</h2>
+        <div class="table-wrap"><table><thead><tr><th>Site</th><th>Audience / role</th><th>Boundary</th></tr></thead><tbody>
+          <tr><td><strong>formalize.now</strong></td><td>Technical RLT: Lean and RLT, specifications, proof dependencies, audits, research records.</td><td>Current technical entry point.</td></tr>
+          <tr><td><strong>readingleveltest.com</strong></td><td>Future general-reader RLT introduction: accurate reading and writing, with accessible examples.</td><td>Do not imply this landing page is complete.</td></tr>
+          <tr><td><strong>carbondioxide.now</strong></td><td>Future meeting point: CO₂, connected atoms, observed matter, physical specifications, clean datacenters.</td><td>Do not claim physical audit results before measurement.</td></tr>
+        </tbody></table></div>
+        <p>A reader should move between sites because the <em>question</em> changes, not because of an unexplained domain redirect.</p>
+      </section>
+      <section id="information" class="section">
+        <h2>6. Homepage and research organization</h2>
+        <p><strong>Primary navigation:</strong> RLT → <code>/rlt/</code>; Audits → <code>/rlt-audits/</code>; Research → <code>/#research</code>. The logo returns home. The guide may be linked from the footer as a reference, not added as a fourth primary destination.</p>
+        <p><strong>Homepage sequence, provisional:</strong> technical RLT introduction → Audits → Research → proof/physical correspondence. The order of Audits and Research is an explicit candidate for the next revision, not a fixed rule.</p>
+        <p>Prefer a concise landing-page description and then a direct project page. Avoid global “Catalog” or “Source” links that unexpectedly lead to unrelated repository collections. Every source link should identify the relevant project, document, or commit.</p>
+        <p><strong>No visible homepage timestamps:</strong> remove edition dates, “latest” badges, and date-sorted stories. Keep dates, commit IDs, pinned toolchains, and run timestamps in research records where they serve reproducibility.</p>
+      </section>
+      <section id="design" class="section">
+        <h2>7. CSS design system</h2>
+        <p>Retain the current dark, restrained visual language. Favor generous spacing, readable paragraphs, limited accents, semantic HTML, and links that describe destinations. The tokens below match the current homepage; they should eventually be shared in one CSS file.</p>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch-color" style="background:#0c141c"></div><small>Background <code>#0c141c</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#111e29"></div><small>Panel <code>#111e29</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#72dfde"></div><small>Accent / focus <code>#72dfde</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#a8ceff"></div><small>Links <code>#a8ceff</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#f0c78e"></div><small>Warm emphasis <code>#f0c78e</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#9be8b5"></div><small>Positive status <code>#9be8b5</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#eef4fb"></div><small>Main text <code>#eef4fb</code></small></div>
+          <div class="swatch"><div class="swatch-color" style="background:#2b3e4d"></div><small>Border <code>#2b3e4d</code></small></div>
+        </div>
+        <pre><code>:root {
+  --bg: #0c141c;
+  --panel: #111e29;
+  --panel2: #172837;
+  --line: #2b3e4d;
+  --text: #eef4fb;
+  --muted: #acc0d0;
+  --cyan: #72dfde;
+  --blue: #a8ceff;
+  --amber: #f0c78e;
+  --green: #9be8b5;
+  --shadow: 0 18px 55px #0004;
+}</code></pre>
+        <div class="rule"><strong>Component guidance</strong><p>Max content width approximately 1130px; inner padding 25px on desktop, 17px on small screens; body 16px with 1.6 line-height; cards with subtle borders and 12–18px radii; 46px minimum primary-action height. Preserve visible keyboard focus, skip links, reduced-motion support, and mobile reflow.</p></div>
+        <p>Use the cyan accent for navigation and calls to action, blue for source links, amber for limited conceptual emphasis, and green for evidence-backed success states. Never use color alone to communicate proof status or completion.</p>
+      </section>
+      <section id="templates" class="section">
+        <h2>8. Preferred writing patterns</h2>
+        <h3>Technical introduction</h3><div class="example"><strong>Model wording</strong><p>“Lean 4 checks proofs against precisely stated propositions. RLT checks derivations in its own first-order system and organizes the reading points, assumptions, and sources involved in comparing statements.”</p></div>
+        <h3>Project card</h3><div class="example"><strong>Model structure</strong><p><strong>Question:</strong> what is examined? <strong>Established:</strong> exactly which result is checked? <strong>Boundary:</strong> what remains conditional, missing, or unmeasured? <strong>Read:</strong> a direct project page.</p></div>
+        <h3>Accurate physical claim</h3><div class="example"><strong>Model wording</strong><p>“Where a claim concerns observed CO₂, identify the molecular specification, sampling location, measurement method, units, and uncertainty.”</p></div>
+        <h3>Avoid rhetorical scaffolding</h3><p>Prefer direct statements to “not X but Y” reversals, generic urgency, vague “breakthrough” language, or language suggesting that a checker proves the correctness of the human specification.</p>
+      </section>
+      <section id="workflow" class="section">
+        <h2>9. Revision and publication rules</h2>
+        <p>Keep this file at <code>/style.html</code> alongside <code>/index.html</code>. Make site-copy changes separately from mathematical claims. Record substantial editorial choices in source control; don't place a public date banner on the homepage.</p>
+        <p>Before publishing a revision, review: link destinations; exact theorem names and citations; terminology; conditional versus unconditional results; visible text contrast; mobile layout; keyboard access; and whether future sites or measurements are wrongly presented as complete.</p>
+        <p class="small">Open editorial decisions: whether Research precedes Audits; refined use of “where” in introductory copy; which vocabulary belongs on the technical homepage versus the future general-reader site; shared CSS extraction once multiple pages adopt the same layout.</p>
+      </section>
+    </div>
+  </div>
+</main>
+<footer><div class="shell"><span>formalize.now · Style &amp; vocabulary</span><span>Reference for technical RLT writing and design</span></div></footer>
+</body>
+</html>
