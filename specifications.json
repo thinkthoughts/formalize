@@ -1,0 +1,159 @@
+[
+  {
+    "id": "QECLean",
+    "category": "Quantum error correction",
+    "title": "Bravyi360 · Logical distance",
+    "source": "https://rlt-fro.now/QECLean/",
+    "summary": "Independent binary-algebra checks on the 90-qubit base complex.",
+    "status": "R / V · scoped results",
+    "detail": "The reported census contains 46 cycles below weight eight, all with checked boundary witnesses. Both boundary ranks are 41; a nontrivial weight-ten cycle supplies an upper bound.",
+    "scope": "The X-sector interval has level R overall; the upper bound has level V. This is not an independent proof of the full 360-qubit distance.",
+    "math": "8\\le d_X\\le 10",
+    "links": [
+      {
+        "label": "RLT",
+        "url": "https://github.com/thinkthoughts/rlt"
+      },
+      {
+        "label": "Research fork",
+        "url": "https://github.com/thinkthoughts/bb-distance-lean"
+      },
+      {
+        "label": "Upstream",
+        "url": "https://github.com/QECLean/bb-distance-lean"
+      }
+    ],
+    "page": "specifications/QECLean/"
+  },
+  {
+    "id": "RLT-RH-001",
+    "category": "Number theory",
+    "title": "Original and simplified Lean RH proofs",
+    "source": "https://rlt-fro.now/RLT-RH-001/",
+    "summary": "A specification for statement preservation and proof correspondence across revisions.",
+    "status": "Preliminary specification",
+    "detail": "The report identifies 22 obligations and a six-link traceability framework. Identical definition text is reported, alongside a declaration-name discrepancy.",
+    "scope": "Elaborated statement correspondence is open. Neither proof was compiled or independently replayed in this investigation.",
+    "math": null,
+    "links": [
+      {
+        "label": "Related mathematical research",
+        "url": "https://translatepi.ai/RH/"
+      },
+      {
+        "label": "RLT",
+        "url": "https://github.com/thinkthoughts/rlt"
+      }
+    ],
+    "page": "specifications/RLT-RH-001/"
+  },
+  {
+    "id": "RLT-QG-001",
+    "category": "Mathematical physics",
+    "title": "Absolute convergence of transition amplitudes",
+    "source": "https://rlt-fro.now/RLT-QG-001/",
+    "summary": "Hilbert-space composition and convergence in a null-cone quantization proposal.",
+    "status": "Written derivation · formalization pending",
+    "detail": "The report recovers the single-cut composition relation and convergence estimate. Bounded operators suffice for absolute convergence; contractions suffice for the stated norm bound.",
+    "scope": "No Lean or RLT proof certificate has been completed. The derivation does not establish gravitational realization or unrestricted trace finiteness.",
+    "math": null,
+    "links": [],
+    "page": "specifications/RLT-QG-001/"
+  },
+  {
+    "id": "RLT-GEO-001",
+    "category": "Geometry",
+    "title": "Surface intersections and singularities",
+    "source": "https://rlt-fro.now/RLT-GEO-001/",
+    "summary": "Independent symbolic investigation of an orthogonal-circle ruled surface.",
+    "status": "Symbolic reproduction · formalization pending",
+    "detail": "A nonzero Whitney determinant at the positive interior singular label supports a cross-cap classification under the classical criterion; symmetry supplies the reflected case.",
+    "scope": "The image-germ conclusion also requires a singleton-fibre argument. No Lean rebuild was performed.",
+    "math": null,
+    "links": [],
+    "page": "specifications/RLT-GEO-001/"
+  },
+  {
+    "id": "RH",
+    "category": "Number theory",
+    "title": "Riemann Hypothesis · Statement and proof",
+    "source": "https://formalize.now/RH/",
+    "summary": "Separate external proof acceptance, exact statements and correspondence.",
+    "status": "External verification reported",
+    "detail": "The page records the Lean and Mathlib communities’ reported verification and identifies source identity, axioms, proof checking and statement correspondence as distinct obligations.",
+    "scope": "RLT has not independently replayed the full external development. The structural reformulation is a separate mathematical project.",
+    "math": null,
+    "links": [
+      {
+        "label": "Invariance and projection",
+        "url": "https://translatepi.ai/RH/"
+      },
+      {
+        "label": "Comparison specification",
+        "url": "https://rlt-fro.now/RLT-RH-001/"
+      }
+    ],
+    "page": "specifications/RH/"
+  },
+  {
+    "id": "378",
+    "category": "Complexity theory",
+    "title": "Math 378 · Positive-rate ETH",
+    "source": "https://formalize.now/378/",
+    "summary": "A Lean bridge between bounded-width SAT and a formal positive-rate ETH predicate.",
+    "status": "Kernel checked · Lean (reported)",
+    "detail": "The bridge addresses encoding, machine simulation, polynomial overhead and the exponential-rate comparison. The source page identifies the final declaration and pinned proof revision.",
+    "scope": "The result concerns the specified formal predicate and its exact correspondence; broader complexity-theory claims require their own statement checks.",
+    "math": "\\neg\\operatorname{PositiveRateETH}",
+    "links": [],
+    "page": "specifications/378/"
+  },
+  {
+    "id": "automlr",
+    "category": "AI architecture",
+    "title": "Attention-head expressivity",
+    "source": "https://formalize.now/automlr/",
+    "summary": "Formal extensions of the symmetric Boolean function head-complexity characterization.",
+    "status": "Kernel checked · scoped extensions (reported)",
+    "detail": "Four extensions are reported published on the fork; a fifth patch has been checked but publication is pending in the source record. The work concerns a specified one-layer model.",
+    "scope": "The model’s assumptions limit the result; it does not characterize all Transformers or measured training efficiency.",
+    "math": null,
+    "links": [
+      {
+        "label": "Original code",
+        "url": "https://github.com/VerifiedMechanisms/automlr"
+      },
+      {
+        "label": "Paper",
+        "url": "https://arxiv.org/abs/2610.25341v1"
+      }
+    ],
+    "page": "specifications/automlr/"
+  },
+  {
+    "id": "intelligenceregulation",
+    "category": "Cryptography",
+    "title": "IntelligenceRegulation · Private inference",
+    "source": "https://formalize.now/intelligenceregulation/",
+    "summary": "Independent verification of conditional proof terms and implementation evidence.",
+    "status": "Independent kernel replay · reported",
+    "detail": "The source audit reports 496 individual module checks, four accepted theorem exports in nanoda and four axiom-removal controls.",
+    "scope": "The proofs retain their premises; implementation correspondence and deployment security remain separate questions.",
+    "math": null,
+    "links": [],
+    "page": "specifications/intelligenceregulation/"
+  },
+  {
+    "id": "cworthy",
+    "category": "Scientific software",
+    "title": "[C]Worthy · Ocean carbon removal",
+    "source": "https://carbondioxide.now/cworthy/",
+    "summary": "Source-linked verification across UCLA-ROMS, ROMS-Tools and C-Star.",
+    "status": "Independent engineering research",
+    "detail": "The research record describes numerical and workflow corrections, scientific findings and reproducible evidence prepared for upstream review.",
+    "scope": "Prepared contributions are not necessarily accepted upstream. Model and software checks do not establish observed physical carbon removal.",
+    "math": null,
+    "links": [],
+    "page": "specifications/cworthy/"
+  }
+]
