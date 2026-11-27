@@ -1,1 +1,71 @@
-.feed-hero{padding:48px 0 38px}.feed-hero h1{font-size:clamp(2.4rem,5vw,4.2rem)}.feed-list{padding:32px 0 54px}.feed-controls:not([hidden]){display:flex;flex-wrap:wrap;align-items:end;gap:16px;margin-bottom:24px}.feed-controls label{display:grid;gap:5px;color:var(--muted);font-size:.88rem}.feed-controls input,.feed-controls select{font:inherit;color:var(--text);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:9px 12px;max-width:100%}.feed-controls input{width:min(310px,75vw)}.feed-card{display:flex;flex-direction:column;align-items:flex-start}.feed-card h3 a{color:var(--text);text-decoration:none}.feed-card h3 a:hover{color:var(--accent);text-decoration:underline}.feed-card .feed-status{margin-top:auto}.feed-card[hidden],#feed-empty[hidden]{display:none}.formula{overflow-x:auto}.feed-controls :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.feed-hero {
+    padding: 48px 0 38px;
+}
+.feed-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+}
+.feed-list {
+    padding: 32px 0 54px;
+}
+.feed-controls:not([hidden]) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.feed-controls label {
+    display: grid;
+    gap: 5px;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+.feed-controls input,
+.feed-controls select {
+    font: inherit;
+    color: var(--text);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 12px;
+    max-width: 100%;
+}
+.feed-controls input {
+    width: min(310px, 75vw);
+}
+.feed-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.feed-card h3 a {
+    color: var(--text);
+    text-decoration: none;
+}
+.feed-card h3 a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+.feed-card .feed-status {
+    margin-top: auto;
+}
+.feed-card[hidden],
+#feed-empty[hidden] {
+    display: none;
+}
+.formula {
+    overflow-x: auto;
+}
+.feed-controls :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+/* First grid item — light mode */
+.grid > :first-child {
+    background-color: #bbddff;
+}
+
+/* First grid item — dark mode */
+[data-theme="dark"] .grid > :first-child {
+    background-color: #223355;
+}
