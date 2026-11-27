@@ -8,14 +8,19 @@
         <link rel="stylesheet" href="/styles/feed.css" />
         <script src="/feed-theme.js"></script>
     </head>
-    <body>
+    <body>      
+        <a class="skip" href="#main">Skip to content</a>
+        <header class="header">
+            <div class="container header-inner">
+                <nav class="nav" aria-label="Main navigation">
+                    <a href="/feed.html">Specifications</a><a href="/rlt/">RLT</a
+                    ><a href="https://rlt-fro.now/">RLT-FRO</a
+                    ><button type="button" class="theme-toggle" id="theme-toggle">◐ Theme</button>
+                </nav>
+                <a class="brand" href="/">formalize<span>.now</span></a>
+            </div>
+        </header>
         <main id="main" class="container">
-            <section class="hero feed-hero">
-                <span class="eyebrow">Mathematics · computation · science</span>
-                <h1>Specifications.</h1>
-                <p class="subtitle">Leading specifications verify trailing generalizations.</p>
-                <p class="lead">Reading points, formal relationships and evidence for independent examination.</p>
-            </section>
             <section class="section feed-list">
                 <div class="feed-controls" id="feed-controls" hidden>
                     <label
@@ -107,19 +112,14 @@
                     </article>
                 </div>
                 <p id="feed-empty" hidden>No matching specifications.</p>
+            </section> 
+            <section class="hero feed-hero">
+                <span class="eyebrow">Mathematics · computation · science</span>
+                <h1>Specifications.</h1>
+                <p class="subtitle">Leading specifications verify trailing generalizations.</p>
+                <p class="lead">Reading points, formal relationships and evidence for independent examination.</p>
             </section>
         </main>
-        <a class="skip" href="#main">Skip to content</a>
-        <header class="header">
-            <div class="container header-inner">
-                <nav class="nav" aria-label="Main navigation">
-                    <a href="/feed.html">Specifications</a><a href="/rlt/">RLT</a
-                    ><a href="https://rlt-fro.now/">RLT-FRO</a
-                    ><button type="button" class="theme-toggle" id="theme-toggle">◐ Theme</button>
-                </nav>
-                <a class="brand" href="/">formalize<span>.now</span></a>
-            </div>
-        </header>
         <footer class="footer">
             <div class="container footer-inner">
                 <span>Leading specifications verify trailing generalizations.</span
